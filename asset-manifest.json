@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/prashanti/static/css/main.ea1455b2.chunk.css",
+    "main.js": "/prashanti/static/js/main.3d0daf34.chunk.js",
+    "main.js.map": "/prashanti/static/js/main.3d0daf34.chunk.js.map",
+    "runtime-main.js": "/prashanti/static/js/runtime-main.065d6ca9.js",
+    "runtime-main.js.map": "/prashanti/static/js/runtime-main.065d6ca9.js.map",
+    "static/js/2.b56ce724.chunk.js": "/prashanti/static/js/2.b56ce724.chunk.js",
+    "static/js/2.b56ce724.chunk.js.map": "/prashanti/static/js/2.b56ce724.chunk.js.map",
+    "index.html": "/prashanti/index.html",
+    "static/css/main.ea1455b2.chunk.css.map": "/prashanti/static/css/main.ea1455b2.chunk.css.map",
+    "static/js/2.b56ce724.chunk.js.LICENSE.txt": "/prashanti/static/js/2.b56ce724.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.065d6ca9.js",
+    "static/js/2.b56ce724.chunk.js",
+    "static/css/main.ea1455b2.chunk.css",
+    "static/js/main.3d0daf34.chunk.js"
+  ]
+}
