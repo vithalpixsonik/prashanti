@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 pb-2">
                             <h4 className="text-light">Head Office</h4>
                             <p className="footer-para">Unit No. 303, Bussa Industrial Estate,
                                 Shankar Rao Naram Path,
@@ -16,21 +16,21 @@ const Footer = () => {
                                 Mumbai, MH, India</p>
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 pb-2">
                             <h4 className="text-light">Branch Office</h4>
                             <p className="footer-para">5th Cross, Hanumanna Layout,
                             Near Lakeshore Garden,<br/> Vidhyaranyapura (P),<br/>
                             Bengaluru - 560097</p>
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 pb-2">
                             <h4 className="text-light">Contact Us</h4>
-                            <img width="90%" className="mt-3" src="./images/CTA.png" />
+                            <img width="90%" className="mt-3 footer-cta" src="./images/CTA.png" /><br/><br/>
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 pb-2">
                             <h4 className="text-light">Members</h4>
-                            <img width="80%" className="mt-3" src="./images/MEMBERS.png" />
+                            <img width="80%" className="mt-3 footer-members" src="./images/MEMBERS.png" />
                         </div>
 
                     </div>

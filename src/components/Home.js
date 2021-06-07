@@ -13,17 +13,17 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="./images/logo.png" width="60%" className="img-fluid" />
+                            <img src="./images/logo.png" width="60%" className="img-fluid about-logo" />
                         </div>
                         <div className="col-lg-6">
-                            <h3>Prashant Mep Consultancy</h3>
-                            <h6>
-                            We're end to end solutions for Mechanical, Electrical, Plumbing, Fire Fighting, Fire Detection, IBMS, etc
+                            {/* <h3 className="about-heading">Prashant Mep Consultant</h3> */}
+                            <h6 className="about-para pt-3">
+                            We're end to end solutions for Mechanical, Electrical, Plumbing, Fire Fighting,<br/> Fire Detection, IBMS, etc
                             </h6>
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-3">View More</button></center>
+                <center><button className="btn viewmore mt-5">View More</button></center>
             </section>
 
             <section className="service">
@@ -54,58 +54,60 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <center><button className="btn viewmore mt-3">View More</button></center>
+                    <center><button className="btn viewmore mt-5">View More</button></center>
             </section>
 
             <section className="workflow bg-light">
-                <div class="header-text"><h2>&nbsp;&nbsp; Our Work Flow &nbsp;&nbsp;</h2></div>
+                <div class="header-text-workflow"><h2>&nbsp;&nbsp; Our Work Flow &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 p-3">
+                        {/* <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow-1.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Preliminary Design <br/> Stage</h4>
                             </center>
                         </div>
-                        <div className="col-lg-4 p-3">
+                        <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow 2.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Design  <br/> Approach</h4>
                             </center>
                         </div>
-                        <div className="col-lg-4 p-3">
+                        <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow 3.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Design <br/> Stage</h4>
                             </center>
                         </div>
-                    </div>
-                    
-                    <div className="row">
-                        <div className="col-lg-4 p-3">
+                        <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow 4.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Tender <br/> Stage</h4>
                             </center>
                         </div>
-                        <div className="col-lg-4 p-3">
+                        <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow 5.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Contract Award   <br/> Stage</h4>
                             </center>
                         </div>
-                        <div className="col-lg-4 p-3">
+                        <div className="col-lg-4 col-6 p-3">
                             <center>
                             <img src="./images/Workflow 6.png" width="30%" className="img-fluid" />
                             <h4 className="text-center pt-3">Construction <br/> Stage</h4>
                             </center>
-                        </div>
+                        </div> */}
+                        <img src="./images/workflow.jpg" className="img-fluid" />
                     </div>
+                    
+                    {/* <div className="row">
+                       
+                    </div> */}
 
                 </div>
             </section>
 
-            <section className="projects">
+            <section className="projects-desktop">
                 <div class="header-text"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
@@ -129,7 +131,7 @@ const Home = () => {
 
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="./images/Project photo 3.png" width="100%" className="img-fluid" />
+                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
                         </div>
                         <div className="col-lg-6">
                             <h1 className="project-heading">COMMERCIALS OFFICES ,<br/> RETAIL , MALL's</h1>
@@ -137,12 +139,44 @@ const Home = () => {
                     </div>
 
                 </div>
-                <center><button className="btn viewmore mt-3">View More</button></center>
+                <center><button className="btn viewmore mt-5">View More</button></center>
+            </section>
+
+
+
+            <section className="projects-mobile">
+                <div class="header-text mt-5 mb-3"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
+                <div className="container">
+                    <div className="row mt-2">
+                        <div className="col-lg-12">
+                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
+                            <h5 className="project-heading text-center">RESIDENTIAL BUILDING <br/> WITH INFRA</h5>
+                        </div>
+                    </div>
+
+                    <div className="row mt-5">
+                        <div className="col-lg-12">
+                            <img src="./images/Project photo 1.png" width="100%" className="img-fluid" />
+                            <h5 className="project-heading text-center">HOTELS & RESORTS.</h5> 
+                        </div>
+                    </div>
+
+                   
+
+                    <div className="row mt-5">
+                        <div className="col-lg-12">
+                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
+                            <h5 className="project-heading text-center">COMMERCIALS OFFICES ,<br/> RETAIL , MALL's</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <center><button className="btn viewmore mt-3 mb-5">View More</button></center>
             </section>
 
 
             <section className="gallery bg-light">
-                <div class="header-text"><h2>&nbsp;&nbsp; Gallery &nbsp;&nbsp;</h2></div>
+                <div class="header-text-gallery"><h2>&nbsp;&nbsp; Gallery &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 p-3">
@@ -152,41 +186,41 @@ const Home = () => {
                             <img src="./images/Gallery photo 2.png" width="100%" className="img-fluid" />
                         </div>
                         <div className="col-lg-4 p-3">
-                            <img src="./images/Gallery photo 3.png" width="100%" className="img-fluid" />
+                            <img src="./images/Gallery Photo 3.png" width="100%" className="img-fluid" />
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-3">View More</button></center>
+                <center><button className="btn viewmore mt-5">View More</button></center>
                 
             </section>
 
 
             <section className="gallery">
-                <div class="header-text"><h2>&nbsp;&nbsp; Clients &nbsp;&nbsp;</h2></div>
+                <div class="header-text-clients"><h2>&nbsp;&nbsp; Clients &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 p-3">
+                        <div className="col-lg-3 col-6 p-3">
                             <center><img src="./images/client 1.png" width="50%" className="img-fluid" /></center>
                         </div>
-                        <div className="col-lg-3 p-3">
+                        <div className="col-lg-3 col-6 p-3">
                             <center><img src="./images/client 2.png" width="50%" className="img-fluid" /></center>
                         </div>
-                        <div className="col-lg-3 p-3">
+                        <div className="col-lg-3 col-6 p-3">
                             <center><img src="./images/client 3.png" width="50%" className="img-fluid" /></center>
                         </div>
-                        <div className="col-lg-3 p-3">
+                        <div className="col-lg-3 col-6 p-3">
                             <center><img src="./images/client 4.png" width="50%" className="img-fluid" /></center>
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-3">View More</button></center>
+                <center><button className="btn viewmore mt-5">View More</button></center>
             </section>
 
 
 
 
             <section className="service">
-                <div class="header-text"><h2>&nbsp;&nbsp; Testimonials &nbsp;&nbsp;</h2></div>
+                <div class="header-text-testimonial"><h2>&nbsp;&nbsp; Testimonials &nbsp;&nbsp;</h2></div>
                     <div className="container">
                             <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">

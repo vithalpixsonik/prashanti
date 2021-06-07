@@ -27,9 +27,7 @@ h2 {
     font-size: 30px;
     z-index: 1;
     overflow: hidden;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 h2:before, h2:after {
     position: absolute;
@@ -49,6 +47,26 @@ h2:before {
    width:16% ;
    margin-left: 42%;
    padding-bottom: 3%;
+}
+.header-text-workflow{
+    width:22% ;
+    margin-left: 39%;
+    padding-bottom: 3%; 
+}
+.header-text-clients{
+    width:14% ;
+    margin-left: 43%;
+    padding-bottom: 3%; 
+}
+.header-text-gallery{
+    width:14% ;
+    margin-left: 43%;
+    padding-bottom: 3%; 
+}
+.header-text-testimonial{
+    width:20% ;
+    margin-left: 40%;
+    padding-bottom: 3%; 
 }
 .service{
     padding-top: 80px;
@@ -95,7 +113,7 @@ ul{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.projects{
+.projects-desktop{
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -121,3 +139,131 @@ ul{
 .footer-credit{
     color: #b9b9b9 !important;
 }
+.desktop-header{
+    display: block;
+}
+.mobile-header{
+    display: none;
+}
+.projects-desktop{
+    display: block;
+}
+.projects-mobile{
+    display: none;
+}
+.text-light{
+    color: #cccccc !important;
+}
+.desktop-slider{
+    display: block;
+}
+.mobile-slider{
+    display: none;
+}
+/* Mobile Media Queries */
+@media only screen and (max-width: 600px) {
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .header-text {
+        width:60% ;
+        margin-left: 20%;
+        padding-bottom: 3%;
+        font-size: 25px !important;
+     }
+     .header-text-workflow{
+
+     }
+     .header-text h2{
+        font-size: 28px !important;
+     }
+     .about-logo{
+         width: 50%;
+         margin-left: 25%;
+     }
+     .about-heading{
+         text-align: center;
+         padding: 3%;
+     }
+     .about-para{
+         text-align: center;
+     }
+     .projects-desktop{
+        display: none;
+    }
+    .projects-mobile{
+        display: block;
+    }
+    .project-heading{
+        padding-top: 5%;
+    }
+    .footer-cta{
+        width: 70% !important;
+    }
+    .footer-members{
+        width: 50% !important;
+    }
+    .header-text-workflow{
+        width:80% ;
+        margin-left: 10%;
+        padding-bottom: 3%; 
+    }
+    .header-text-workflow h2{
+        font-size: 25px !important;
+     }
+    .header-text-clients{
+        width:60% ;
+        margin-left: 20%;
+        padding-bottom: 3%; 
+    }
+    .header-text-gallery{
+        width:60% ;
+        margin-left: 20%;
+        padding-bottom: 3%; 
+    }
+    .header-text-testimonial{
+        width:80% ;
+        margin-left: 10%;
+        padding-bottom: 3%; 
+    }
+    .desktop-slider{
+        display: none;
+    }
+    .mobile-slider{
+        display: block;
+    }
+    .carousel-control-prev{
+        color:#b82834 !important;
+        background-color: #b82834 !important;
+        padding: 10px !important;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px !important;
+        margin-top: 40%;
+        margin-left: 5%;
+    }
+    .carousel-control-next{
+      color:#b82834 !important;
+      background-color: #b82834 !important;
+      padding: 10px !important;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px !important;
+      margin-top: 40%;
+      margin-right: 5%;
+  }
+  .service h3{
+      font-size: 20px !important;
+      text-align: center;
+      margin-top: 2%;
+  }
+  .service ul li::before {
+    display: none;
+}
+  .service ul{
+      text-align: center;
+  }
+  }
