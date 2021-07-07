@@ -2,14 +2,15 @@ import React from 'react';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 import Slider from './layout/Slider';
-
+import { Link } from 'react-router-dom';
+import { SRLWrapper } from "simple-react-lightbox";
 const Home = () => {
     return (
         <div>
             <Header/>
             <Slider/>
-            <section className="about-us">
-                <div class="header-text"><h2>&nbsp;&nbsp; About Us &nbsp;&nbsp;</h2></div>
+            <section className="about-us bg-light">
+                <div className="header-text"><h2>&nbsp;&nbsp; About Us &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -23,14 +24,14 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-5">View More</button></center>
+                <center><Link to="/about-us"><button className="btn viewmore mt-5">View More</button></Link></center>
             </section>
 
             <section className="service">
-                <div class="header-text"><h2>&nbsp;&nbsp; Services &nbsp;&nbsp;</h2></div>
+                <div className="header-text"><h2>&nbsp;&nbsp; Services &nbsp;&nbsp;</h2></div>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-12">
                                 <h3>MEP & Building Services</h3>
                                 <ul className="pt-2">
                                     <li>HVAC & Mechanical</li>
@@ -43,79 +44,40 @@ const Home = () => {
                                     <li>BIM Modelling</li>
                                 </ul>
                             </div>  
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-12">
                                 <h3>Infrastructure Development MEP Services</h3>
                                 <ul className="pt-2">
-                                    <li>Master planning</li>
+                                    <li>Master Planning</li>
                                     <li>Infrastructure Planning</li>
-                                    <li>Landscape designing</li>
-                                    <li>Infrastructure expansion and modernisation</li>
+                                    <li>Landscape Designing</li>
+                                    <li>Infrastructure Expansion And Modernisation</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <center><button className="btn viewmore mt-5">View More</button></center>
+                    <center><Link to="/services"><button className="btn viewmore mt-5">View More</button></Link></center>
             </section>
 
             <section className="workflow bg-light">
-                <div class="header-text-workflow"><h2>&nbsp;&nbsp; Our Work Flow &nbsp;&nbsp;</h2></div>
+                <div className="header-text-workflow"><h2>&nbsp;&nbsp; Our Work Flow &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
-                        {/* <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow-1.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Preliminary Design <br/> Stage</h4>
-                            </center>
-                        </div>
-                        <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow 2.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Design  <br/> Approach</h4>
-                            </center>
-                        </div>
-                        <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow 3.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Design <br/> Stage</h4>
-                            </center>
-                        </div>
-                        <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow 4.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Tender <br/> Stage</h4>
-                            </center>
-                        </div>
-                        <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow 5.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Contract Award   <br/> Stage</h4>
-                            </center>
-                        </div>
-                        <div className="col-lg-4 col-6 p-3">
-                            <center>
-                            <img src="./images/Workflow 6.png" width="30%" className="img-fluid" />
-                            <h4 className="text-center pt-3">Construction <br/> Stage</h4>
-                            </center>
-                        </div> */}
                         <img src="./images/workflow.jpg" className="img-fluid" />
                     </div>
-                    
-                    {/* <div className="row">
-                       
-                    </div> */}
-
                 </div>
             </section>
 
             <section className="projects-desktop">
-                <div class="header-text"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
+                <div className="header-text"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="./images/Project photo 1.png" width="100%" className="img-fluid" />
+                            <div class="geeks">
+                                <img src="./images/Project1.png" width="100%" className="img-fluid" />
+                            </div>
                         </div>
                         <div className="col-lg-6">
-                        <h1 className="project-heading">HOTELS & RESORTS.</h1>
+                        <h1 className="project-heading">HOTELS & RESORTS</h1>
                             
                         </div>
                     </div>
@@ -125,39 +87,47 @@ const Home = () => {
                         <h1 className="project-heading">RESIDENTIAL BUILDING <br/> WITH INFRA</h1>
                         </div>
                         <div className="col-lg-6">
-                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
+                            <div class="geeks">
+                                <img src="./images/Project2.png" width="100%" className="img-fluid" />
+                            </div>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
+                            <div class="geeks">
+                                <img src="./images/Project3.png" width="100%" className="img-fluid"  />
+                            </div>
                         </div>
                         <div className="col-lg-6">
-                            <h1 className="project-heading">COMMERCIALS OFFICES ,<br/> RETAIL , MALL's</h1>
+                            <h1 className="project-heading">COMMERCIALS OFFICES ,<br/> RETAILS , MALLS</h1>
                         </div>
                     </div>
 
                 </div>
-                <center><button className="btn viewmore mt-5">View More</button></center>
+                <center><Link to="/projects"><button className="btn viewmore mt-5">View More</button></Link></center>
             </section>
 
 
 
             <section className="projects-mobile">
-                <div class="header-text mt-5 mb-3"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
+                <div className="header-text mt-5 mb-3"><h2>&nbsp;&nbsp; Projects &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row mt-2">
                         <div className="col-lg-12">
-                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
-                            <h5 className="project-heading text-center">RESIDENTIAL BUILDING <br/> WITH INFRA</h5>
+                            <div class="geeks">
+                                <img src="./images/Project2.png" width="100%" className="img-fluid" />
+                            </div>
+                            <h6 className="project-heading text-center">RESIDENTIAL BUILDING <br/> WITH INFRA</h6>
                         </div>
                     </div>
 
                     <div className="row mt-5">
                         <div className="col-lg-12">
-                            <img src="./images/Project photo 1.png" width="100%" className="img-fluid" />
-                            <h5 className="project-heading text-center">HOTELS & RESORTS.</h5> 
+                            <div class="geeks">
+                                <img src="./images/Project3.png" width="100%" className="img-fluid" />
+                            </div>
+                            <h6 className="project-heading text-center">HOTELS & RESORTS</h6> 
                         </div>
                     </div>
 
@@ -165,85 +135,118 @@ const Home = () => {
 
                     <div className="row mt-5">
                         <div className="col-lg-12">
-                            <img src="./images/Projects photo 2.png" width="100%" className="img-fluid" />
-                            <h5 className="project-heading text-center">COMMERCIALS OFFICES ,<br/> RETAIL , MALL's</h5>
+                            <div class="geeks">
+                                <img src="./images/Project1.png" width="100%" className="img-fluid"  />
+                            </div>
+                            <h5 className="project-heading text-center">COMMERCIALS OFFICES ,<br/> RETAILS , MALLS</h5>
                         </div>
                     </div>
 
                 </div>
-                <center><button className="btn viewmore mt-3 mb-5">View More</button></center>
+                <center><Link to="/projects"><button className="btn viewmore mt-3 mb-5">View More</button></Link></center>
             </section>
 
 
             <section className="gallery bg-light">
-                <div class="header-text-gallery"><h2>&nbsp;&nbsp; Gallery &nbsp;&nbsp;</h2></div>
+                <div className="header-text-gallery"><h2>&nbsp;&nbsp; Gallery &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 p-3">
-                            <img src="./images/Gallery photo 1.png" width="100%" className="img-fluid" />
+                                <div class="geeks">
+                                    <img src="./images/Gallery photo 1.png"  />
+                                </div>
                         </div>
                         <div className="col-lg-4 p-3">
-                            <img src="./images/Gallery photo 2.png" width="100%" className="img-fluid" />
+                            <div class="geeks">
+                                <img src="./images/Gallery photo 2.png"  />
+                            </div>
                         </div>
                         <div className="col-lg-4 p-3">
-                            <img src="./images/Gallery Photo 3.png" width="100%" className="img-fluid" />
+                            <div class="geeks">
+                                <img src="./images/Gallery Photo 3.png"  />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-5">View More</button></center>
+                <center><Link to="/gallery"><button className="btn viewmore mt-5">View More</button></Link></center>
                 
             </section>
 
 
             <section className="gallery">
-                <div class="header-text-clients"><h2>&nbsp;&nbsp; Clients &nbsp;&nbsp;</h2></div>
+                <div className="header-text-clients"><h2>&nbsp;&nbsp; Clients &nbsp;&nbsp;</h2></div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-6 p-3">
+                        <div className="col-lg-3 col-6">
+                            <div className="shadow-sm p-4 mt-3">
                             <center><img src="./images/client 1.png" width="50%" className="img-fluid" /></center>
+                            </div>
                         </div>
-                        <div className="col-lg-3 col-6 p-3">
+                        <div className="col-lg-3 col-6">
+                            <div className="shadow-sm p-4 mt-3">
                             <center><img src="./images/client 2.png" width="50%" className="img-fluid" /></center>
+                            </div>
                         </div>
-                        <div className="col-lg-3 col-6 p-3">
+                        <div className="col-lg-3 col-6">
+                            <div className="shadow-sm p-4 mt-3">
                             <center><img src="./images/client 3.png" width="50%" className="img-fluid" /></center>
+                            </div>
                         </div>
-                        <div className="col-lg-3 col-6 p-3">
+                        <div className="col-lg-3 col-6">
+                            <div className="shadow-sm p-4 mt-3">
                             <center><img src="./images/client 4.png" width="50%" className="img-fluid" /></center>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <center><button className="btn viewmore mt-5">View More</button></center>
+                <center><Link to="/clients"><button className="btn viewmore mt-5">View More</button></Link></center>
             </section>
 
 
 
 
             <section className="service">
-                <div class="header-text-testimonial"><h2>&nbsp;&nbsp; Testimonials &nbsp;&nbsp;</h2></div>
+                <div className="header-text-testimonial"><h2>&nbsp;&nbsp; Testimonials &nbsp;&nbsp;</h2></div>
                     <div className="container">
-                            <div id="carouselExampleControls1" className="carousel slide" data-ride="carousel">
+                            <div id="carouselExampleControls2" className="carousel slide" data-ride="carousel">
                                 <div className="carousel-inner">
+                                <SRLWrapper>
                                     <div className="carousel-item active">
-                                    <img src="./images/Testimonial 1.png" className="d-block w-100" alt="..." />
+                                        <center>
+                                    <a href="./images/testimonial/test4.jpg">
+                                        <img src="./images/T 1.2.png" className="img-fluid" alt="CONVENTION CENTRE" />
+                                    </a></center>
                                     </div>
+                                    
                                     <div className="carousel-item">
-                                    <img src="./images/Testimonial 2.png" className="d-block w-100" alt="..." />
+                                    <center>
+                                    <a href="./images/testimonial/test1.jpg">
+                                    <img src="./images/T 2.2.png" className="img-fluid" alt="CONVENTION CENTRE" />
+                                    </a>                 
+                                    </center>                   
                                     </div>
+                                   
+
                                     <div className="carousel-item">
-                                    <img src="./images/Testimonial 3.png" className="d-block w-100" alt="..." />
+                                    <center>
+                                    <a href="./images/testimonial/test3.jpg">
+                                    <img src="./images/T 3.2.png" className="img-fluid" alt="CONVENTION CENTRE" />
+                                    </a>
+                                    </center>
                                     </div>
+                                    </SRLWrapper>
                                 </div>
-                                <a className="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                                <a className="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span className="sr-only">Previous</span>
                                 </a>
-                                <a className="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                                <a className="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
                                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span className="sr-only">Next</span>
                                 </a>
                         </div>
                     </div>
+                    <center><Link to="/testimonials"><button className="btn viewmore mt-5">View More</button></Link></center>
             </section>
 
         <Footer/>

@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [navbar,fixeNavbar]=useState(false);
+    const [isActive, setActive] = useState(false);
 
+    const toggleClass = () => {
+      setActive(!isActive);
+    };
     const fixedNavbarTop =()=>{
         if(window.scrollY>210)
         {
@@ -23,17 +27,17 @@ const Header = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-7">
-                            <img src="./images/logo.png" width="20%" className="img-fluid p-3" />
+                        <Link to="/"><img src="/images/logo.png" width="20%" className="img-fluid p-3" /></Link>
                         </div>
                         <div className="col-lg-5">
                             <div className="container pt-4">
                                 <div className="row pt-2">
-                                    <div className="col-lg-6">
-                                       <img src="./images/Email.png" width="12%" className="img-fluid" /><span className="font-weight-bold"> shrikant@prashantimep.com</span>
+                                    <div className="col-lg-7">
+                                       <img src="/images/Email.png" width="9%" className="img-fluid" /><span className="font-weight-bold ml-1"> info@prashantimep.com </span>
                                     </div>
                                    
-                                    <div className="col-lg-6">
-                                        <img src="./images/Call.png" width="8%" className="img-fluid" /> <span className="font-weight-bold">+91 98190 26352</span>
+                                    <div className="col-lg-5">
+                                        <img src="/images/Call.png" width="7%" className="img-fluid" /> <span className="font-weight-bold">+91 98190 26352</span>
                                     </div>
                                     {/* <div className="col-lg-4">
                                         <img src="./images/clock.png" width="15%"  className="img-fluid ml-3" /> <span className="font-weight-bold">+91 98190 26352</span>
@@ -53,31 +57,31 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav m-auto">
                     <li className="nav-item active">
-                        <a className="nav-link mr-4" href="#">Home <span className="sr-only">(current)</span></a>
+                        <Link className="nav-link  text-light mr-4" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">About Us</a>
+                        <Link className="nav-link text-light mr-4" to="/about-us">About Us</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Services</a>
+                        <Link className="nav-link text-light mr-4" to="/services">Services</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Gallery</a>
+                        <Link className="nav-link text-light mr-4" to="/gallery">Gallery</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Project</a>
+                        <Link className="nav-link text-light mr-4" to="/projects">Projects</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Clients</a>
+                        <Link className="nav-link text-light mr-4" to="/clients">Clients</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Testimonials</a>
+                        <Link className="nav-link text-light mr-4" to="/testimonials">Testimonials</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Careers</a>
+                        <Link className="nav-link text-light mr-4" to="/careers">Careers</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light mr-4" href="#">Contact</a>
+                        <Link className="nav-link text-light mr-4" to="/contact">Contact</Link>
                     </li>
                     </ul>
                 </div>
@@ -90,38 +94,38 @@ const Header = () => {
             <section className="mobile-header">
                 <nav className="navbar navbar-expand-lg navbar-light bg-white">
                     <img className="navbar-brand" src="./images/logo.png" width="30%" />
-                    {/* <a className="navbar-brand" href="#" width="20%"><img src="./images/logo.png" width="10%" /></a> */}
+                    {/* <Link className="navbar-brand" to="#" width="20%"><img src="./images/logo.png" width="10%" /></Link> */}
                     <button className="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <i  className={isActive ? 'fa fa-times': 'fa fa-bars'} onClick={toggleClass} ></i>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                <Link className="nav-link  pl-2" to="/">Home <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">About Us</a>
+                                <Link className="nav-link text-dark  pl-2" to="/about-us">About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Services</a>
+                                <Link className="nav-link text-dark  pl-2" to="/services">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Gallery</a>
+                                <Link className="nav-link text-dark  pl-2" to="/gallery">Gallery</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Project</a>
+                                <Link className="nav-link text-dark  pl-2" to="/projects">Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Clients</a>
+                                <Link className="nav-link text-dark  pl-2" to="/clients">Clients</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Testimonials</a>
+                                <Link className="nav-link text-dark  pl-2" to="/testimonials">Testimonials</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Careers</a>
+                                <Link className="nav-link text-dark  pl-2" to="/careers">Careers</Link>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-dark" href="#">Contact</a>
+                            <li className="nav-item contact-btn">
+                                <Link className="nav-link text-white pl-2" to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>
